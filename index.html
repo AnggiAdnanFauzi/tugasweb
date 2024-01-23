@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <title>BS-STORE-TopUpGames</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url("css/bacground.png") ;
+            background-size: 1550px auto;
+        }
+
+        .gambar {
+            float: left;
+            width: 20%;
+            height: auto;
+            padding: 0 10px 0 0;
+        }
+
+        .teks {
+            color: white;
+            text-align: justify;
+            font-family: verdana;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="w3-container">
+        <center>
+            <img src="css/banner.png" width="100%" height="auto">
+        </center>
+
+    </div>
+
+    <div class="w3-bar w3-cyan w3-card-4">
+
+        <div class="w3-dropdown-hover ">
+            <button class="w3-button">...</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card4">
+                <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+            </div>
+        </div>
+
+        <button class="w3-bar-item w3-button" onclick="openKota('Coc')">COC</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Pubg')">PUBG</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Valorant')">VALORANT</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('MobileLegends')">MOBILE LEGENDS</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('FreeFire')">FREE FIRE</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Cod')">COD</button>
+
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-">Best Sellers</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card4">
+                <button class="w3-bar-item w3-button" onclick="openKota('Fading')">Mobile Legends</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('Bottom')">COC</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('Top')">Free Fire</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('Zoom')">PUBG</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="Profile" class="w3-container kota w3-animate-fading w3-black" style="display:none">
+        <center>
+            <h1>PROFILE SAYA</h1>
+            <br>
+            <img src="css/anggiaf.png" width=300 height=300>
+            <br>
+            <table>
+                <h5>
+                    <tr>
+                        <td>NIM
+                        <td>:10123264
+                    <tr>
+                        <td>NAMA
+                        <td>:ANGGI ADNAN FAUZI
+                    <tr>
+                        <td>KELAS
+                        <td>:IF 7
+                </h5>
+            </table>
+
+</html>
+</center>
+</div>
+<div id="Home" class="w3-container kota w3-animate-fading" style="display:none">
+    <center>
+        <font color="white">
+        <h1>TUGAS AKHIR</h1>
+        <p>Kuliah Pemograman WEB 1</p>
+        <p>UNIKOM</p>
+         </font>
+    </center>
+</div>
+
+<div id="Fading" class="w3-container kota w3-animate-fading w3-black" style="display:none">
+    <center>
+        <h2><font color="white">MOBILE LEGENDS</font></h2>
+    </center>
+    <img class="gambar" src="css/ml.png">
+    <div class="teks">
+        <center>
+            <table>
+                <tr>
+                    <td>ID GAME
+                    <td><input class="w3-input" name=id>
+
+                <tr>
+                    <td>PEMBAYARAN
+                    <td><select class="w3-select" name=via>
+                            <option>DANA
+                            <option>GO-PAY
+                            <option>PAYPAL
+                        </select>
+                <tr>
+                    <td>PILIH NOMINAL
+                    <td><input class="w3-radio" type="radio" name="jenis" value="1">50 Diamonds RP 15.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="2">100 Diamonds RP 30.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="3">500 Diamonds RP 150.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="4">1000 Diamonds RP 300.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="5">3000 Diamonds RP 900.000
+                <tr>
+                    <td colspan=2>
+                        <br>
+                <tr>
+                    <td>JUMLAH ITEM DIBELI
+                    <td><input class="w3-input" type="number" name="jumlahitem">
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <td>HARGA
+                    <td> <input class="w3-input" type="text" name="harga">
+                <tr>
+                    <td>TOTAL
+                    <td> <input class="w3-input" type="text" name="total">
+            </table>
+            <center>
+                <input type="button" class="w3-button w3-red w3-round-xlarge" style="width:200" value="proses"
+                    onclick="proses()">
+                <input type="button" class="w3-button w3-yellow w3-round-xlarge" style="width:200" value="reset"
+                    onclick="reset()">
+
+    </div>
+</div>
+<div id="Bottom" class="w3-container kota w3-animate-bottom" style="display:none">
+    <center>
+        <h2><font color="white">CLASH OF CLANS</font></h2>
+    </center>
+    <img class="gambar" src="css/coc.png">
+    <div class="teks">
+        <center>
+            <table>
+                <tr>
+                    <td>ID GAME
+                    <td><input class="w3-input" name=id>
+
+                <tr>
+                    <td>PEMBAYARAN
+                    <td><select class="w3-select" name=via>
+                            <option>DANA
+                            <option>GO-PAY
+                            <option>PAYPAL
+                        </select>
+                <tr>
+                    <td>PILIH NOMINAL
+                    <td><input class="w3-radio" type="radio" name="jenis" value="1">100 Gems RP 15.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="2">550 Gems RP 70.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="3">1300 Gems RP 130.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="4">2700 Gems RP 270.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="5">7000 Gems RP 700.000
+                <tr>
+                    <td colspan=2>
+                        <br>
+                <tr>
+                    <td>JUMLAH ITEM DIBELI
+                    <td><input class="w3-input" type="number" name="jumlahitem">
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <td>HARGA
+                    <td> <input class="w3-input" type="text" name="harga">
+                <tr>
+                    <td>TOTAL
+                    <td> <input class="w3-input" type="text" name="total">
+            </table>
+            <center>
+                <input type="button" class="w3-button w3-red w3-round-xlarge" style="width:200" value="proses"
+                    onclick="proses()">
+                <input type="button" class="w3-button w3-yellow w3-round-xlarge" style="width:200" value="reset"
+                    onclick="reset()">
+
+    </div>
+</div>
+<div id="Top" class="w3-container kota w3-animate-top" style="display:none">
+    <center>
+        <h2><font color="white">FREE FIRE</font></h2>
+    </center>
+    <img class="gambar" src="css/ff.png">
+    <div class="teks">
+        <center>
+            <table>
+                <tr>
+                    <td>ID GAME
+                    <td><input class="w3-input" name=id>
+
+                <tr>
+                    <td>PEMBAYARAN
+                    <td><select class="w3-select" name=via>
+                            <option>DANA
+                            <option>GO-PAY
+                            <option>PAYPAL
+                        </select>
+                <tr>
+                    <td>PILIH NOMINAL
+                    <td><input class="w3-radio" type="radio" name="jenis" value="1">50 Diamonds RP 6.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="2">100 Diamonds RP 13.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="3">500 Diamonds RP 60.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="4">1000 Diamonds RP 130.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="5">3000 Diamonds RP 350.000
+                <tr>
+                    <td colspan=2>
+                        <br>
+                <tr>
+                    <td>JUMLAH ITEM DIBELI
+                    <td><input class="w3-input" type="number" name="jumlahitem">
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <td>HARGA
+                    <td> <input class="w3-input" type="text" name="harga">
+                <tr>
+                    <td>TOTAL
+                    <td> <input class="w3-input" type="text" name="total">
+            </table>
+            <center>
+                <input type="button" class="w3-button w3-red w3-round-xlarge" style="width:200" value="proses"
+                    onclick="proses()">
+                <input type="button" class="w3-button w3-yellow w3-round-xlarge" style="width:200" value="reset"
+                    onclick="reset()">
+
+    </div>
+</div>
+<div id="Zoom" class="w3-container kota w3-animate-zoom" style="display:none">
+    <center>
+        <h2><font color="white">PUBG</font></h2>
+    </center>
+    <img class="gambar" src="css/pubg.png">
+    <div class="teks">
+        <center>
+            <table>
+                <tr>
+                    <td>ID GAME
+                    <td><input class="w3-input" name=id>
+
+                <tr>
+                    <td>PEMBAYARAN
+                    <td><select class="w3-select" name=via>
+                            <option>DANA
+                            <option>GO-PAY
+                            <option>PAYPAL
+                        </select>
+                <tr>
+                    <td>PILIH NOMINAL
+                    <td><input class="w3-radio" type="radio" name="jenis" value="1">60 UC Global RP 15.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="2">350 UC Global RP 70.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="3">660 UC Global RP 150.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="4">1800 UC Global RP 350.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="5">3850 UC Global RP 700.000
+                <tr>
+                    <td colspan=2>
+                        <br>
+                <tr>
+                    <td>JUMLAH ITEM DIBELI
+                    <td><input class="w3-input" type="number" name="jumlahitem">
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <td>HARGA
+                    <td> <input class="w3-input" type="text" name="harga">
+                <tr>
+                    <td>TOTAL
+                    <td> <input class="w3-input" type="text" name="total">
+            </table>
+            <center>
+                <input type="button" class="w3-button w3-red w3-round-xlarge" style="width:200" value="proses"
+                    onclick="proses()">
+                <input type="button" class="w3-button w3-yellow w3-round-xlarge" style="width:200" value="reset"
+                    onclick="reset()">
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="Coc" class="w3-container kota w3-animate-fading w3-black" style="display:none">
+    <center>
+        <h2><font color="white">CLASH OF CLANS</font></h2>
+    </center>
+    <img class="gambar" src="css/coc.png">
+    <div class="teks">
+        <center>
+            <table>
+                <tr>
+                    <td>ID GAME
+                    <td><input class="w3-input" name=id>
+
+                <tr>
+                    <td>PEMBAYARAN
+                    <td><select class="w3-select" name=via>
+                            <option>DANA
+                            <option>GO-PAY
+                            <option>PAYPAL
+                        </select>
+                <tr>
+                    <td>PILIH NOMINAL
+                    <td><input class="w3-radio" type="radio" name="jenis" value="1">100 Gems RP 15.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="2">550 Gems RP 70.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="3">1300 Gems RP 130.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="4">2700 Gems RP 270.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="5">7000 Gems RP 700.000
+                <tr>
+                    <td colspan=2>
+                        <br>
+                <tr>
+                    <td>JUMLAH ITEM DIBELI
+                    <td><input class="w3-input" type="number" name="jumlahitem">
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <td>HARGA
+                    <td> <input class="w3-input" type="text" name="harga">
+                <tr>
+                    <td>TOTAL
+                    <td> <input class="w3-input" type="text" name="total">
+            </table>
+            <center>
+                <input type="button" class="w3-button w3-red w3-round-xlarge" style="width:200" value="proses"
+                    onclick="proses()">
+                <input type="button" class="w3-button w3-yellow w3-round-xlarge" style="width:200" value="reset"
+                    onclick="reset()">
+
+    </div>
+</div>
+<div id="Pubg" class="w3-container kota w3-animate-bottom" style="display:none">
+    <center>
+        <h2><font color="white">PUBG</font></h2>
+    </center>
+    <img class="gambar" src="css/pubg.png">
+    <div class="teks">
+        <center>
+            <table>
+                <tr>
+                    <td>ID GAME
+                    <td><input class="w3-input" name=id>
+
+                <tr>
+                    <td>PEMBAYARAN
+                    <td><select class="w3-select" name=via>
+                            <option>DANA
+                            <option>GO-PAY
+                            <option>PAYPAL
+                        </select>
+                <tr>
+                    <td>PILIH NOMINAL
+                    <td><input class="w3-radio" type="radio" name="jenis" value="1">60 UC Global RP 15.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="2">350 UC Global RP 70.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="3">660 UC Global RP 150.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="4">1800 UC Global RP 350.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="5">3850 UC Global RP 700.000
+                <tr>
+                    <td colspan=2>
+                        <br>
+                <tr>
+                    <td>JUMLAH ITEM DIBELI
+                    <td><input class="w3-input" type="number" name="jumlahitem">
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <td>HARGA
+                    <td> <input class="w3-input" type="text" name="harga">
+                <tr>
+                    <td>TOTAL
+                    <td> <input class="w3-input" type="text" name="total">
+            </table>
+            <center>
+                <input type="button" class="w3-button w3-red w3-round-xlarge" style="width:200" value="proses"
+                    onclick="proses()">
+                <input type="button" class="w3-button w3-yellow w3-round-xlarge" style="width:200" value="reset"
+                    onclick="reset()">
+    </div>
+</div>
+<div id="Valorant" class="w3-container kota w3-animate-top" style="display:none">
+    <center>
+        <h2><font color="white">VALORANT</font></h2>
+    </center>
+    <img class="gambar" src="css/valorant.png">
+    <div class="teks">
+        <center>
+            <table>
+                <tr>
+                    <td>ID GAME
+                    <td><input class="w3-input" name=id>
+
+                <tr>
+                    <td>PEMBAYARAN
+                    <td><select class="w3-select" name=via>
+                            <option>DANA
+                            <option>GO-PAY
+                            <option>PAYPAL
+                        </select>
+                <tr>
+                    <td>PILIH NOMINAL
+                    <td><input class="w3-radio" type="radio" name="jenis" value="1">130 Points RP 15.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="2">450 Points RP 50.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="3">1400 Points RP 150.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="4">4000 Points RP 377.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="5">8000 Points RP 755.000
+                <tr>
+                    <td colspan=2>
+                        <br>
+                <tr>
+                    <td>JUMLAH ITEM DIBELI
+                    <td><input class="w3-input" type="number" name="jumlahitem">
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <td>HARGA
+                    <td> <input class="w3-input" type="text" name="harga">
+                <tr>
+                    <td>TOTAL
+                    <td> <input class="w3-input" type="text" name="total">
+            </table>
+            <center>
+                <input type="button" class="w3-button w3-red w3-round-xlarge" style="width:200" value="proses"
+                    onclick="proses()">
+                <input type="button" class="w3-button w3-yellow w3-round-xlarge" style="width:200" value="reset"
+                    onclick="reset()">
+    </div>
+</div>
+<div id="MobileLegends" class="w3-container kota w3-animate-zoom" style="display:none">
+    <center>
+        <h2><font color="white">MOBILE LEGENDS</font></h2>
+    </center>
+    <img class="gambar" src="css/ml.png">
+    <div class="teks">
+        <center>
+            <table>
+                <tr>
+                    <td>ID GAME
+                    <td><input class="w3-input" name=id>
+
+                <tr>
+                    <td>PEMBAYARAN
+                    <td><select class="w3-select" name=via>
+                            <option>DANA
+                            <option>GO-PAY
+                            <option>PAYPAL
+                        </select>
+                <tr>
+                    <td>PILIH NOMINAL
+                    <td><input class="w3-radio" type="radio" name="jenis" value="1">50 Diamonds RP 15.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="2">100 Diamonds RP 30.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="3">500 Diamonds RP 150.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="4">1000 Diamonds RP 300.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="5">3000 Diamonds RP 900.000
+                <tr>
+                    <td colspan=2>
+                        <br>
+                <tr>
+                    <td>JUMLAH ITEM DIBELI
+                    <td><input class="w3-input" type="number" name="jumlahitem">
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <td>HARGA
+                    <td> <input class="w3-input" type="text" name="harga">
+                <tr>
+                    <td>TOTAL
+                    <td> <input class="w3-input" type="text" name="total">
+            </table>
+            <center>
+                <input type="button" class="w3-button w3-red w3-round-xlarge" style="width:200" value="proses"
+                    onclick="proses()">
+                <input type="button" class="w3-button w3-yellow w3-round-xlarge" style="width:200" value="reset"
+                    onclick="reset()">
+    </div>
+</div>
+<div id="FreeFire" class="w3-container kota w3-animate-left" style="display:none">
+    <center>
+        <h2><font color="white">FREE FIRE</font></h2>
+    </center>
+    <img class="gambar" src="css/ff.png">
+    <div class="teks">
+        <center>
+            <table>
+                <tr>
+                    <td>ID GAME
+                    <td><input class="w3-input" name=id>
+
+                <tr>
+                    <td>PEMBAYARAN
+                    <td><select class="w3-select" name=via>
+                            <option>DANA
+                            <option>GO-PAY
+                            <option>PAYPAL
+                        </select>
+                <tr>
+                    <td>PILIH NOMINAL
+                    <td><input class="w3-radio" type="radio" name="jenis" value="1">50 Diamonds RP 6.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="2">100 Diamonds RP 13.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="3">500 Diamonds RP 60.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="4">1000 Diamonds RP 130.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="5">3000 Diamonds RP 350.000
+                <tr>
+                    <td colspan=2>
+                        <br>
+                <tr>
+                    <td>JUMLAH ITEM DIBELI
+                    <td><input class="w3-input" type="number" name="jumlahitem">
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <td>HARGA
+                    <td> <input class="w3-input" type="text" name="harga">
+                <tr>
+                    <td>TOTAL
+                    <td> <input class="w3-input" type="text" name="total">
+            </table>
+            <center>
+                <input type="button" class="w3-button w3-red w3-round-xlarge" style="width:200" value="proses"
+                    onclick="proses()">
+                <input type="button" class="w3-button w3-yellow w3-round-xlarge" style="width:200" value="reset"
+                    onclick="reset()">
+    </div>
+</div>
+<div id="Cod" class="w3-container kota w3-animate-right" style="display:none">
+    <center>
+        <h2><font color="white">CALL OF DUTY</font></h2>
+    </center>
+    <img class="gambar" src="css/cod.png">
+    <div class="teks">
+        <center>
+            <table>
+                <tr>
+                    <td>ID GAME
+                    <td><input class="w3-input" name=id>
+
+                <tr>
+                    <td>PEMBAYARAN
+                    <td><select class="w3-select" name=via>
+                            <option>DANA
+                            <option>GO-PAY
+                            <option>PAYPAL
+                        </select>
+                <tr>
+                    <td>PILIH NOMINAL
+                    <td><input class="w3-radio" type="radio" name="jenis" value="1">65 CP RP 10.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="2">330 CP RP 50.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="3">660 CP RP 100.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="4">800 CP RP 115.000
+                <tr>
+                    <td>
+                    <td><input class="w3-radio" type="radio" name="jenis" value="5">3550 CP RP 500.000
+                <tr>
+                    <td colspan=2>
+                        <br>
+                <tr>
+                    <td>JUMLAH ITEM DIBELI
+                    <td><input class="w3-input" type="number" name="jumlahitem">
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <td>HARGA
+                    <td> <input class="w3-input" type="text" name="harga">
+                <tr>
+                    <td>TOTAL
+                    <td> <input class="w3-input" type="text" name="total">
+            </table>
+            <center>
+                <input type="button" class="w3-button w3-red w3-round-xlarge" style="width:200" value="proses"
+                    onclick="proses()">
+                <input type="button" class="w3-button w3-yellow w3-round-xlarge" style="width:200" value="reset"
+                    onclick="reset()">
+    </div>
+</div>
+
+
+
+
+<script>
+    function openKota(namakota) {
+        var i;
+        var x = document.getElementsByClassName("kota");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(namakota).style.display = "block";
+    }
+
+</script>
+
+</body>
+
+</html>
